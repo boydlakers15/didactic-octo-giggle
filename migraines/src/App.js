@@ -14,12 +14,7 @@ function LogTable() {
   const [input7, setInput7] = useState('');
   const [textarea1, setTextarea1] = useState('');
   const [editing, setEditing] = useState(-1);
-  // useEffect(() => {
-  //   const storedData = localStorage.getItem('logData');
-  //   if (storedData) {
-  //     setLogData(JSON.parse(storedData));
-  //   }
-  // }, []);
+  
 
   useEffect(() => {
     localStorage.setItem('logData', JSON.stringify(logData));
@@ -97,7 +92,6 @@ function LogTable() {
     setTextarea1(entryToEdit.textarea1);
     setEditing(index);
   };
-
 
   return (
     <><div><h1 >Migraine List</h1></div>
@@ -223,7 +217,6 @@ function LogTable() {
       </tfoot>
     </table></>
   );
-  
 }
 
 export default LogTable;
