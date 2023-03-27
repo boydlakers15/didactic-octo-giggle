@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/didactic-octo-giggle/migraines/static/css/main.073c9b0a.css",
-    "main.js": "/didactic-octo-giggle/migraines/static/js/main.6b4d2d87.js",
-    "static/js/787.4a98c334.chunk.js": "/didactic-octo-giggle/migraines/static/js/787.4a98c334.chunk.js",
-    "index.html": "/didactic-octo-giggle/migraines/index.html",
-    "main.073c9b0a.css.map": "/didactic-octo-giggle/migraines/static/css/main.073c9b0a.css.map",
-    "main.6b4d2d87.js.map": "/didactic-octo-giggle/migraines/static/js/main.6b4d2d87.js.map",
-    "787.4a98c334.chunk.js.map": "/didactic-octo-giggle/migraines/static/js/787.4a98c334.chunk.js.map"
+    "main.css": "/didactic-octo-giggle/static/css/main.073c9b0a.css",
+    "main.js": "/didactic-octo-giggle/static/js/main.7f15b8ec.js",
+    "static/js/787.5256424d.chunk.js": "/didactic-octo-giggle/static/js/787.5256424d.chunk.js",
+    "index.html": "/didactic-octo-giggle/index.html",
+    "main.073c9b0a.css.map": "/didactic-octo-giggle/static/css/main.073c9b0a.css.map",
+    "main.7f15b8ec.js.map": "/didactic-octo-giggle/static/js/main.7f15b8ec.js.map",
+    "787.5256424d.chunk.js.map": "/didactic-octo-giggle/static/js/787.5256424d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.6b4d2d87.js"
+    "static/js/main.7f15b8ec.js"
   ]
 }
