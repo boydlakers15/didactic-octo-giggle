@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.css": "/didactic-octo-giggle/static/css/main.79bf5df7.css",
-    "main.js": "/didactic-octo-giggle/static/js/main.566fd735.js",
-    "static/js/787.5256424d.chunk.js": "/didactic-octo-giggle/static/js/787.5256424d.chunk.js",
+    "main.css": "/didactic-octo-giggle/static/css/main.f46d99be.css",
+    "main.js": "/didactic-octo-giggle/static/js/main.286c2068.js",
     "static/media/6.png": "/didactic-octo-giggle/static/media/6.c98c6ef675579d11c387.png",
     "index.html": "/didactic-octo-giggle/index.html",
-    "main.79bf5df7.css.map": "/didactic-octo-giggle/static/css/main.79bf5df7.css.map",
-    "main.566fd735.js.map": "/didactic-octo-giggle/static/js/main.566fd735.js.map",
-    "787.5256424d.chunk.js.map": "/didactic-octo-giggle/static/js/787.5256424d.chunk.js.map"
+    "main.f46d99be.css.map": "/didactic-octo-giggle/static/css/main.f46d99be.css.map",
+    "main.286c2068.js.map": "/didactic-octo-giggle/static/js/main.286c2068.js.map"
   },
   "entrypoints": [
-    "static/css/main.79bf5df7.css",
-    "static/js/main.566fd735.js"
+    "static/css/main.f46d99be.css",
+    "static/js/main.286c2068.js"
   ]
 }
