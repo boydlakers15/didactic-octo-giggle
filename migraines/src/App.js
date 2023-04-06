@@ -104,7 +104,10 @@ function LogTable() {
     });
   };
   
-
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    return date.toLocaleString();
+  };
 
   const handleExport = () => {
     const data = logData.map(entry => ({
@@ -150,11 +153,11 @@ function LogTable() {
       <tbody>
       {logData.map((logEntry, index) => (
       <tr key={index}>
-        <td>{logEntry.datetime1}</td>
+        <td>{formatDate(logEntry.datetime1)}</td>
         <td>{logEntry.selectedOption}</td>
         <td>{logEntry.input3}</td>
         <td>{logEntry.textarea}</td>
-        <td>{logEntry.datetime}</td>
+        <td>{formatDate(logEntry.datetime)}</td>
         <td>{logEntry.selectedOption1}</td>
         <td>{logEntry.input7}</td>
         <td>{logEntry.textarea1}</td>
