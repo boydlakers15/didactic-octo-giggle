@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-
+import { writeFile} from 'xlsx';
+import * as XLSX from 'xlsx';
 
 
 function LogTable() {
@@ -91,10 +92,46 @@ function LogTable() {
     setInput7(entryToEdit.input7);
     setTextarea1(entryToEdit.textarea1);
     setEditing(index);
+    
+    // Add the 'editing' CSS class to the row being edited
+    const rows = document.querySelectorAll('.log-table tbody tr');
+    rows.forEach((row, i) => {
+      if (i === index) {
+        row.classList.add('editing');
+      } else {
+        row.classList.remove('editing');
+      }
+    });
+  };
+  
+
+
+  const handleExport = () => {
+    const data = logData.map(entry => ({
+      Date: entry.datetime1,
+      Morning: entry.selectedOption,
+      Level: entry.input3,
+      Log: entry.textarea,
+      Evening: entry.datetime,
+      YesNo: entry.selectedOption1,
+      PainLevel: entry.input7,
+      Log1: entry.textarea1,
+    }));
+  
+    const worksheet = XLSX.utils.json_to_sheet(data);
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, 'Migraine List');
+    writeFile(workbook, 'migraine-list.xlsx');
   };
 
+  
+
   return (
-    <><div><h1 >Migraine List</h1></div>
+    <><div>
+      <h1 >Migraine List</h1>
+      <button onClick={handleExport}>Export to Excel</button>
+
+      </div>
       <table className="log-table">
 
       <thead>
