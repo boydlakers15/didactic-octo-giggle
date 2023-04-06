@@ -140,3 +140,58 @@ textarea{
     max-width: 500px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .log-table th,
+  .log-table td {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .log-table td:before {
+    content: attr(data-title);
+    float: left;
+    font-weight: bold;
+  }
+  
+  .log-table td:nth-of-type(1):before { content: "Date"; }
+  .log-table td:nth-of-type(2):before { content: "Time"; }
+  .log-table td:nth-of-type(3):before { content: "input"; }
+  
+  .log-table tbody tr {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  .log-table tbody td {
+    display: block;
+    text-align: center;
+  }
+  
+  .log-table tbody td:before {
+    content: attr(data-title);
+    float: left;
+    font-weight: bold;
+  }
+  
+  .log-table tbody td:nth-of-type(1):before { content: "Date"; }
+  .log-table tbody td:nth-of-type(2):before { content: "Time"; }
+  .log-table tbody td:nth-of-type(3):before { content: "input"; }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"], select, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  form button[type="submit"], .delete-all {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
