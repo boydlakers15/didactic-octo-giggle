@@ -2,6 +2,7 @@
   border-collapse: collapse;
   width: 100%;
   margin-bottom: 1rem;
+  overflow-x: auto;
 }
 
 .log-table th,
@@ -100,98 +101,101 @@ textarea{
     font-size: 14px;
     flex-wrap: wrap;
   }
-}@media (max-width: 600px) {
-  th,
-  td {
-    display: block;
-    width: 100%;
-    text-align: center;
+  div h1 {
+    padding-left: 10px;
+    font-size: 30px;
   }
-  
-  td:before {
-    content: attr(data-title);
-    float: left;
-    font-weight: bold;
+
+  input {
+    padding: 0.4rem;
+    margin-left: 5px;
   }
-  
-  td:nth-of-type(1):before { content: "Date"; }
-  td:nth-of-type(2):before { content: "Time"; }
-  td:nth-of-type(3):before { content: "input"; }
-  
-  form label {
-    display: block;
-    margin-bottom: 5px;
+
+  img {
+    width: 30px;
+    height: 30px;
+    padding-right: 5px;
   }
-  
-  form input[type="text"] {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
+
+  select {
+    padding-bottom: 5px;
   }
-  
-  form button[type="submit"] {
-    display: block;
-    margin: 0 auto;
+
+  textarea {
+    padding-bottom: 10px;
   }
-}
-@media (max-width: 50px) {
-  .log-table {
-    display: inline-block;
-    max-width: 500px;
+}@media only screen and (max-width: 600px) {
+  .log-table th {
+    display: none;
   }
-}
-@media only screen and (max-width: 600px) {
-  .log-table th,
-  .log-table td {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-  
   .log-table td:before {
     content: attr(data-title);
     float: left;
     font-weight: bold;
   }
-  
   .log-table td:nth-of-type(1):before { content: "Date"; }
   .log-table td:nth-of-type(2):before { content: "Time"; }
   .log-table td:nth-of-type(3):before { content: "input"; }
-  
-  .log-table tbody tr {
+}
+
+/* Modify the table rows to fit on small screens */
+@media only screen and (max-width: 600px) {
+  .log-table td {
     display: block;
-    margin-bottom: 1rem;
-  }
-  
-  .log-table tbody td {
-    display: block;
+    width: 100%;
     text-align: center;
+    padding: 0.5rem;
   }
-  
-  .log-table tbody td:before {
+  .log-table td:before {
     content: attr(data-title);
     float: left;
     font-weight: bold;
+    padding-right: 10px;
   }
-  
-  .log-table tbody td:nth-of-type(1):before { content: "Date"; }
-  .log-table tbody td:nth-of-type(2):before { content: "Time"; }
-  .log-table tbody td:nth-of-type(3):before { content: "input"; }
-  
+}
+
+/* Modify the form fields to fit on small screens */
+@media only screen and (max-width: 600px) {
   form label {
     display: block;
     margin-bottom: 5px;
   }
-  
   form input[type="text"], select, textarea {
     display: block;
     width: 100%;
     margin-bottom: 10px;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
   }
-  
   form button[type="submit"], .delete-all {
     display: block;
     margin: 0 auto;
     margin-bottom: 10px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+  }
+}
+
+/* Add this to adjust the size of the logo and the header on small screens */
+@media only screen and (max-width: 600px) {
+  div h1 {
+    padding-left: 10px;
+    font-size: 30px;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+    padding-right: 5px;
+  }
+}
+
+/* Add this to adjust the size of the input fields and select fields on small screens */
+@media only screen and (max-width: 600px) {
+  input, select {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+    margin-left: 5px;
   }
 }
