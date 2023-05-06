@@ -106,6 +106,8 @@ function LogTable() {
   
   const formatDate = (dateString) => {
     const date = new Date(dateString);
+    const roundedMinutes = 15 * Math.ceil(date.getMinutes() / 15);
+    date.setMinutes(roundedMinutes);
     return date.toLocaleString();
   };
 
